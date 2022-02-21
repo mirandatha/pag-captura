@@ -1,109 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
-.container{
-    max-width: 1000px;
-    margin: auto;
+.container {
+  margin: auto;
+  max-width: 1000px;
 }
 
-/* ==== HEADER ==== */
-
-header{
-    background-color: #48C5CE;
-    text-align: center;
-    color: white;
-    padding: 10px;
+header {
+  background-color: #48c5ce;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-.title{
-    font-size: 26px;
+.title {
+  font-size: 26px;
 }
-
-/* ==== SECTION ==== */
-
-section{
-    padding: 20px;
-    background-image: url("../images/people.jpg");
-    background-size: cover;
-    overflow: hidden;
+/*Start - Section*/
+section {
+  padding: 20px;
+  background-image: url('../images/people.jpg');
+  background-size: cover;
+  overflow: hidden;
 }
-
-
-.formContainer{
-    margin-top: 15px;
-    background-color: #ffffffbb;
-    max-width: 230px;
-    padding: 20px;
-    float: right;
+.formContainer {
+  max-width: 230px;
+  background-color: #ffffffbb;
+  float: right;
+  padding: 20px;
 }
-
-.formContainer h2{
-    font-size: 16px;
+h2 {
+  font-size: 16px;
 }
-
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
-
-.mb{
-    margin-bottom: 15px;
+.mb {
+  margin-bottom: 15px;
 }
-
-input, select{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: none;
-    margin-bottom: 10px;
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
 }
-
-input[type="button"]{
-    background-color: #48C5CE;
-    color: white;
-    font-weight: bold;
+input[type='submit'] {
+  color: white;
+  background-color: #48c5ce;
+  font-weight: bold;
 }
-
-select{
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-image: url("../images/arrow.jpg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px) center;
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('../images/arrow.jpg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center; /*posição da seta no eixo x e y*/
 }
-
-/* ==== FOOTER ==== */
-
-footer{
-    background-color: #202121;
-    padding: 40px;
-    text-align: center;
+/*Start footer*/
+footer {
+  background-color: #202121;
+  padding: 40px;
+  text-align: center;
 }
-
-.picture{
-    width: 160px;
+.picture {
+  width: 160px;
 }
-
-.description{
-    display: inline-block;
-    max-width: 40%;
-    color: white;
-    margin-left: 40px;
+.description {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  max-width: 40%;
+  margin-left: 40px;
 }
 
 .description p,
-.description h3{
-    margin-bottom: 20px;
+.description h3 {
+  margin-bottom: 20px;
 }
-
-.description h3{
-    font-size: 24px;
-    text-align: left;
+/*Responsividade*/
+@media screen and (max-width: 600px) {
+  .formContainer {
+    float: none;
+    margin: auto;
+  }
+  .description {
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 }
